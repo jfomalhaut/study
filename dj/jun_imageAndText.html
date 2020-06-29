@@ -1,0 +1,74 @@
+<html>
+<head>
+	<style>
+		.textBox {
+			width: 800px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+			background-color: darkgreen;
+			font-size: 25px;
+			font-weight: 600;
+			border-top-left-radius: 30px;
+		}
+
+		.text {
+			color: white;
+			display: inline-block;
+			padding-left: 50px;
+			background-image: url("./img/icon_franchise.png");
+			background-repeat: no-repeat;
+			background-position: 10px center;
+		}
+
+		.text2 {
+			color: white;
+			display: inline-block;
+			padding-left: 70px;
+			position: relative;
+		}
+
+		.text2::before{
+			content: "";
+			position: absolute;
+			left: 0; top: 0;
+			width: 70px;
+			height: 100px;
+			background-image: url("./img/icon_quickmenu.png");
+			background-repeat: no-repeat;
+			background-position: 0px center;
+		}
+
+		.boxes {
+			display: flex;
+			background-color: black;
+			padding: 10px 0;
+		}
+
+		.box {
+			width: 70px;
+			height: 70px;
+			background-image: url("./img/icon_quickmenu.png");
+			background-repeat: no-repeat;
+		}
+
+		.box:nth-child(1){ background-position: 0px 0px; }
+		.box:nth-child(2){ background-position: -70px 0px; }
+		.box:nth-child(3){ background-position: -140px 0px; }
+		.box:nth-child(4){ background-position: -210px 0px; }
+
+	</style>
+</head>
+<body>
+	<div class="textBox">
+		<div class="text">가맹점 문의</div>
+	</div>
+
+	<div class="boxes">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+</body>
+</html>
