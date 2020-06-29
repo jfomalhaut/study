@@ -1,0 +1,191 @@
+<html>
+<head>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box; list-style: none;}
+        
+        .bar{
+            width: 100%;
+            height: 5px;
+            background-color: green;
+        }
+
+        header{
+            width: 100%;
+            height: 200px;
+        }
+
+        .inner{
+            width: 1170px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .top{
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+        }
+        
+        .logo{
+            background-image: url("./img/logo_w.png");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            height: 40px;
+            margin-top: 20px;
+        }
+        .utility{
+            width: 40%;
+            height: 100%;
+            float: right;
+        }
+        .utility ul{
+            
+        }
+
+        .utility ul li{
+            float: right;
+            padding-left: 10px;
+            line-height: 40px;
+            font-weight: bold;
+        }
+
+        .bottom{
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+        }
+
+        .bottom .gnb{
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        .bottom .gnb ul{
+            overflow: hidden;
+        }
+
+        .gnb ul li{
+            float: left;
+            width: calc(100% / 5);
+            line-height: 100px;
+            text-align: center;
+        }
+
+        main{
+            width: 100%;
+        }
+
+        .mainImg{
+            background-image: url("./img/main_PC_1920x440_20200427112254027.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 400px;
+            background-size: cover;
+            position: relative;
+        }
+
+        .quickMenu{
+            height: 80px;
+            width: 1170px;
+            background-color: crimson;
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            bottom: -40px;
+            transform: translateX(-50%);
+            overflow: hidden;
+        }
+        
+        .imgBox{
+            height: 100%;
+            width: 600px;
+            float: right;
+            background-color: darkolivegreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bar"></div>
+        <header>
+            <div class="inner">
+                <div class="top">
+                    <div class="logo"></div>
+                    <div class="utility">
+                        <ul>
+                            <li>option1</li>
+                            <li>option2</li>
+                            <li>option3</li>
+                            <li>option4</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="gnb">
+                        <ul>
+                            <li>menu1</li>
+                            <li>menu2</li>
+                            <li>menu3</li>
+                            <li>menu4</li>
+                            <li>menu5</li>
+                        </ul>
+                    </div>      
+                </div>
+            </div>   
+        </header>
+
+        <main>
+            <div class="mainImg">
+                <div class="quickMenu">
+                    <div class="imgBox">
+                        <div class="find">
+                            <div class="txt1">매장찾기</div>
+                        </div>
+                        <div class="franchise">
+                            <div class="txt2">가맹점신청문의</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="bannerTop">
+                    <h2>Subway's Menu</h2>
+                    <div class="bannerMenu">
+                        <ul>
+                            <li>menu1</li>
+                            <li>menu2</li>
+                            <li>menu3</li>
+                            <li>menu4</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bannerBottom">
+                    <div class="sandwich">
+                        <div class="sandwich1">
+                            <img src="" alt="">
+                            <div class="name">에그마요</div>
+                            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quasi a temporibus accusantium illo voluptatibus dicta quisquam incidunt eligendi dolor?</div>
+                        </div>
+                        <div class="sandwich2">
+                            <img src="" alt="">
+                            <div class="name">이탈리안 비엠티</div>
+                            <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat ipsam repellendus, incidunt magnam maiores placeat atque quibusdam provident dolorum dolore?</div>
+                        </div>
+                        <div class="sandwich3">
+                            <img src="" alt="">
+                            <div class="name">비엘티</div>
+                            <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos necessitatibus ab, maiores hic ea adipisci enim ut error commodi recusandae?</div>
+                        </div>
+                        <div class="sandwich4">
+                            <img src="" alt="">
+                            <div class="name">미트볼</div>
+                            <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error omnis repudiandae nisi. A vero deleniti voluptate cumque aliquid tenetur dolor.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
