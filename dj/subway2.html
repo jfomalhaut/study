@@ -39,15 +39,11 @@
             height: 100%;
             float: right;
         }
-        .utility ul{
-            width: calc(100% / 3);
-            float: right;
-        }
-
+   
         .utility ul li{
             float: right;
             padding-left: 10px;
-            line-height: 40px;
+            line-height: 100px;
             font-weight: bold;
         }
 
@@ -71,6 +67,7 @@
             width: calc(100% / 5);
             line-height: 100px;
             text-align: center;
+            font-weight: bold;
         }
 
         main{
@@ -89,7 +86,6 @@
         .quickMenu{
             height: 80px;
             width: 1170px;
-            background-color: crimson;
             margin: 0 auto;
             position: absolute;
             left: 50%;
@@ -102,7 +98,100 @@
             height: 100%;
             width: 600px;
             float: right;
-            background-color: darkolivegreen;
+        }
+        
+        .find{
+            width: 300px;
+            height: 100%;
+            float: left;
+            background:yellow;
+            border-top-left-radius: 15px;
+        }
+        
+        .franchise{
+            width: 300px;
+            height: 100%;
+            float: left;
+            background:green;
+            border-bottom-right-radius: 15px;
+        }
+
+        .txt1{
+            text-align: center;
+            line-height: 80px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            background-image: url("./img/icon_map.png");
+            background-repeat: no-repeat;
+            background-position: 85px center;
+        }
+
+        .txt2{
+            text-align: center;
+            line-height: 80px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            background-image: url("./img/icon_franchise.png");
+            background-repeat: no-repeat;
+            background-position: 45px center;
+        }
+
+        .banner{
+            width: 1300px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        .bannerTop{
+            width:100%;
+            overflow: hidden;
+        }
+
+        h2{
+            font-size: 50px;
+            display: inline;
+            background-image: url("./img/bul_tit.png");
+            background-repeat: no-repeat;
+        }
+
+        .bannermenu{
+            float: right;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .bannerMenu ul li{
+            float: right;
+            padding-right: 30px;
+            font-weight: bold;
+            line-height: 70px;
+        }
+
+        .bannerBottom{
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .sandwiches .sandwich{
+            width: calc((100% - 10px * 3) / 4);
+            float: left;
+            padding: 10px;
+        }
+
+        .sandwich img{
+            width: 100%;
+        }
+
+        .sandwich .name{
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .sandwich .desc{
+            text-align: center;
+            padding: 10px 25px;
         }
 
     </style>
@@ -164,24 +253,24 @@
                     </div>
                 </div>
                 <div class="bannerBottom">
-                    <div class="sandwich">
-                        <div class="sandwich1">
-                            <img src="" alt="">
+                    <div class="sandwiches">
+                        <div class="sandwich">
+                            <img src="./img/sandwich_cl01.jpg" alt="">
                             <div class="name">에그마요</div>
                             <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quasi a temporibus accusantium illo voluptatibus dicta quisquam incidunt eligendi dolor?</div>
                         </div>
-                        <div class="sandwich2">
-                            <img src="" alt="">
+                        <div class="sandwich">
+                            <img src="./img/sandwich_cl02.jpg" alt="">
                             <div class="name">이탈리안 비엠티</div>
                             <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat ipsam repellendus, incidunt magnam maiores placeat atque quibusdam provident dolorum dolore?</div>
                         </div>
-                        <div class="sandwich3">
-                            <img src="" alt="">
+                        <div class="sandwich">
+                            <img src="./img/sandwich_cl03.jpg" alt="">
                             <div class="name">비엘티</div>
                             <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos necessitatibus ab, maiores hic ea adipisci enim ut error commodi recusandae?</div>
                         </div>
-                        <div class="sandwich4">
-                            <img src="" alt="">
+                        <div class="sandwich">
+                            <img src="./img/sandwich_cl04.jpg" alt="">
                             <div class="name">미트볼</div>
                             <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error omnis repudiandae nisi. A vero deleniti voluptate cumque aliquid tenetur dolor.</div>
                         </div>
