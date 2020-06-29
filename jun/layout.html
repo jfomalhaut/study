@@ -1,0 +1,49 @@
+<html>
+<head>
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		
+		main {
+			height: 500px;
+			background: yellowgreen;
+		}
+		aside {
+			float: left;
+			width: 200px;
+			height: 500px;
+			background: blue;
+		}
+		
+		section {
+			float: left;
+			width: calc(100% - 200px * 2);
+			height: 500px;
+			padding: 10px;
+		}
+
+		article {
+			float: left;
+			width: calc((100% - 10px * 2) / 3);
+			background: black;
+			height: 100%;
+		}
+
+		article:nth-child(2) {
+			background: gray;
+			margin: 0 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<main>
+		<aside></aside>
+		<section>
+			<article></article>
+			<article></article>
+			<article></article>
+		</section>
+		<aside></aside>
+	</main>
+</body>
+</html>

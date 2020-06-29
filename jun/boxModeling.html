@@ -1,0 +1,108 @@
+<html>
+<head>
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box;}
+
+		header {
+			height: 150px;
+			background: #f0f0f0;
+		}
+
+		header .inner { 
+			width: 1000px;
+			height: 100%;
+			margin: 0 auto;
+			background: lightgray;
+			position: relative;
+		}
+
+		header .inner nav {
+			position: absolute;
+			background: gray;
+			bottom: 0;
+			height: 50px;
+			width: 100%;
+		}
+
+		.container {
+			width: 1000px;
+			margin: 10px auto 0;
+			background: lightcoral;
+		}
+
+		.container section.sec01 {
+			margin-bottom: 10px;
+			overflow: hidden;
+		}
+
+		.container section.sec01 .left {
+			float: left;
+			width: 790px;
+		}
+
+		.container section.sec01 .right {
+			float: right;
+			width: 200px;
+		}
+		
+		.container .sec01 .left .box:nth-child(1) { background: tomato; height: 100px; }
+		.container .sec01 .left .box:nth-child(2) { background: darkcyan; margin: 10px 0;  height: 80px; }
+		.container .sec01 .left .box:nth-child(3) { background: yellowgreen;  height: 100px; }
+		
+		.container .sec01 .right .box:nth-child(1) { background: skyblue; height: 200px; }
+		.container .sec01 .right .box:nth-child(2) { background: aquamarine;  margin: 10px 0;  height: 20px; }
+		.container .sec01 .right .box:nth-child(3) { background: navy;  height: 60px; }
+
+		.container section.sec02 {
+			margin-bottom: 10px;
+			overflow: hidden;
+		}
+
+		.container section.sec02 .left {
+			width: 790px;
+			height: 500px;
+			float: left;
+			background: black;
+		}
+
+		.container section.sec02 .right {
+			width: 200px;
+			height: 500px;
+			float: right;
+			background: darkgoldenrod;
+		}
+
+		footer {
+			height: 150px;
+			background: saddlebrown;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="inner">
+			<nav></nav>
+		</div>
+	</header>
+	<div class="container">
+		<section class="sec01">
+			<div class="left">
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+			<div class="right">
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+		</section>
+		<section class="sec02">
+			<div class="left"></div>
+			<div class="right"></div>
+		</section>
+	</div>
+	<footer></footer>
+</body>
+</html>
