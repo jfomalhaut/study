@@ -1,7 +1,7 @@
 <html>
 <head>
     <style>
-        *{margin: 0; padding: 0;}
+        *{margin: 0; padding: 0; box-sizing: border-box;}
         
         header{
             width: 100%;
@@ -11,110 +11,111 @@
         
         .gnb{
             width: 1000px;
-            height: 150px;
+            height: 100%;
             background-color:yellowgreen;
             margin: 0 auto;
             position: relative;
         }
 
         .nav{
-            width: 1000px;
+            width: 100%;
             height: 30px;
             background-color: green;
             position: absolute;
-            left: 0;
-            top: 120px;
+            bottom: 0;
         }
 
         main{
             width: 100%;
             background-color: #cccccc;
-            height: 700px;
         }
         
         .contents{
             width: 1000px;
-            height: 700px;
             margin: 0 auto;
             overflow: hidden;
         }
 
-        .section{
+        .top{
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .left{
             width: 800px;
-            height: 700px;
             float: left;
         }
+
+        .right{
+            width: 200px;
+            float: right;
+        }
         
-        .section_1{
-            width: 795px;
-            margin-right: 5px;
+        .top_1{
+            width: 790px;
             background-color: green;
             height: 60px;
             margin-top: 10px;
         }
         
-        .section_2{
-            width: 795px;
-            margin-right: 5px;
+        .top_2{
+            width: 790px;
             background-color: coral;
             height: 30px;
             margin-top: 10px;
         }
         
-        .section_3{
-            width: 795px;
-            margin-right: 5px;
+        .top_3{
+            width: 790px;
             background-color: green;
             height: 90px;
             margin-top: 10px;
         }
-        
-        .section_4{
-            width: 795px;
-            margin-right: 5px;
-            background-color: black;
-            height: 470px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
 
-        .banner{
+        .top_4{
             width: 200px;
-            height: 700px;
-            float: right;
-        }
-
-        .banner_1{
-            width: 195px;
-            margin-left: 5px;
             background-color: tomato;
             height: 60px;
             margin-top: 10px;
         }
 
-        .banner_2{
-            width: 195px;
-            margin-left: 5px;
+        .top_5{
+            width: 200px;
             background-color:brown;
             height: 60px;
             margin-top: 10px;
         }
 
-        .banner_3{
-            width: 195px;
-            margin-left: 5px;
+        .top_6{
+            width: 200px;
             background-color: blue;
             height: 60px;
             margin-top: 10px;
         }
-
-        .banner_4{
-            width: 195px;
-            margin-left: 5px;
-            background-color: purple;
-            height: 470px;
+        
+        .bottom{
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+        
+        
+        .bottom_1{
+            width: 790px;
+            background-color: black;
+            height: 480px;
             margin-top: 10px;
             margin-bottom: 10px;
+            float: left;
+        }
+
+        .bottom_2{
+            width: 200px;
+            background-color: aqua;
+            height: 480px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            float: right;
         }
         
         footer{
@@ -134,17 +135,21 @@
 
         <main>
             <div class="contents">
-                <div class="section">
-                    <div class="section_1"></div>
-                    <div class="section_2"></div>
-                    <div class="section_3"></div>
-                    <div class="section_4"></div>
+                <div class="top">
+                    <div class="left">
+                        <div class="top_1"></div>
+                        <div class="top_2"></div>
+                        <div class="top_3"></div>
+                    </div>
+                    <div class="right">
+                        <div class="top_4"></div>
+                        <div class="top_5"></div>
+                        <div class="top_6"></div>
+                    </div> 
                 </div>
-                <div class="banner">
-                    <div class="banner_1"></div>
-                    <div class="banner_2"></div>
-                    <div class="banner_3"></div>
-                    <div class="banner_4"></div>
+                <div class="bottom">
+                    <div class="bottom_1"></div>
+                    <div class="bottom_2"></div>
                 </div>
             </div>
         </main>

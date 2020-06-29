@@ -5,12 +5,15 @@
             width: 100%;
             height: 150px;
             background: #cccccc;
+            position: relative;
         }
 
         .nav{
             width: 100%;
             height: 50px;
             background-color: gray;
+            position: absolute;
+            bottom: 0;
         }
 
         main{
@@ -62,13 +65,12 @@
 <div class="container">
 
     <header>
-        header     
+        header
+        <nav>
+            <div class="nav">nav</div>
+        </nav>     
     </header>
     
-    <nav>
-        <div class="nav">nav</div>
-    </nav>
-
     <main>
         <div class="aside1">aside</div>
         <div class="articles">
