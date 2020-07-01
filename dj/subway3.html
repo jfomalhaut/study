@@ -187,6 +187,7 @@
         section{
             background-image: url("./img/bg_content.gif");
             width: 100%;
+            margin-top: 80px;
         }
 
         .boxes{
@@ -222,14 +223,15 @@
 
         .howtoUse{
             position: absolute;
-            left: 20px;
-            top: 200px;
-            padding: 5px;
+            left: 35px;
+            bottom: 40px;
+            padding: 8px 14px;
             color: white;
-            font-size: 20px;
+            font-size: 17px;
             font-weight: bold;
             border: 2px solid white;
             border-radius: 20px;
+            letter-spacing: -1px;
         }
 
         .boxTop .topRight{
@@ -253,13 +255,14 @@
         .history{
             position: absolute;
             left: 400px;
-            top: 200px;
+            bottom: 40px;
             color: white;
-            font-size: 20px;
+            font-size: 17px;
             font-weight: bold;
             border: 2px solid white;
             border-radius: 20px;
-            padding: 5px;
+            padding: 8px 14px;
+            letter-spacing: -1px;
         }
 
         .boxes .boxBottom{
@@ -287,6 +290,7 @@
             background-image: url("./img/bul_tit.png");
             background-repeat: no-repeat;
             font-size: 30px;
+            padding: 20px 0 0 20px;
         }
 
         .bottomLeft .text{
@@ -322,6 +326,34 @@
             border-bottom-left-radius: 30px;
             margin-right: 55px;
         }
+
+        .quickMenu_1{
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            background-color: white;
+        }
+
+        .quickbox{
+            width: calc((100% - 10px * 3) / 4);
+            overflow: hidden;
+        }
+
+        .quickboxLeft{
+            float: left;
+            width: 70px;
+			height: 70px;
+			background-image: url("./img/icon_quickmenu.png");
+			background-repeat: no-repeat; 
+        }
+
+        .quickboxRight{
+            float: right;
+        }
+        .quickbox:nth-child(1) .quickboxLeft{background-position: 0 0;}
+        .quickbox:nth-child(2) .quickboxLeft{background-position: -70px 0;}
+        .quickbox:nth-child(3) .quickboxLeft{background-position: -140px 0;}
+        .quickbox:nth-child(4) .quickboxLeft{background-position: -210px 0;}
     </style>
 </head>
 <body>
@@ -410,7 +442,7 @@
             <div class="boxes">
                 <div class="boxTop">
                     <div class="topLeft">
-                        <div class="enjoy">써브웨이를<br>즐기는 방법!</div>
+                        <div class="enjoy">써브웨이를<br>제대로 즐기는 방법!</div>
                         <div class="howtoUse">이용방법</div>
                     </div>
                     <div class="topRight">
@@ -435,7 +467,37 @@
                 </div>
             </div>
         </section>
-        
+
+        <div class="quickMenu_1">
+            <div class="quickbox">
+                <div class="quickboxLeft"></div>
+                <div class="quickboxRight">
+                    <div class="quickboxTop">프랜차이즈</div>
+                    <div class="quickboxBottom">개설절차/투자비용 정보</div>
+                </div>
+            </div>
+            <div class="quickbox">
+                <div class="quickboxLeft"></div>
+                <div class="quickboxRight">
+                    <div class="quickboxTop">지사안내</div>
+                    <div class="quickboxBottom">수도권/지방 지사정보</div>
+                </div>
+            </div>
+            <div class="quickbox">
+                <div class="quickboxLeft"></div>
+                <div class="quickboxRight">
+                    <div class="quickboxTop">광고영상</div>
+                    <div class="quickboxBottom">TV광고/동영상</div>
+                </div>
+            </div>
+            <div class="quickbox">
+                <div class="quickboxLeft"></div>
+                <div class="quickboxRight">
+                    <div class="quickboxTop">1:1문의</div>
+                    <div class="quickboxBottom">개선/문의사항</div>
+                </div>
+            </div>   
+        </div>        
     </div>
 </body>
 </html>
