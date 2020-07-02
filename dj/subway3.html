@@ -332,6 +332,7 @@
             margin: 0 auto;
             display: flex;
             background-color: white;
+            padding: 20px;
         }
 
         .quickbox{
@@ -354,6 +355,63 @@
         .quickbox:nth-child(2) .quickboxLeft{background-position: -70px 0;}
         .quickbox:nth-child(3) .quickboxLeft{background-position: -140px 0;}
         .quickbox:nth-child(4) .quickboxLeft{background-position: -210px 0;}
+        
+        .quickboxTop{
+            line-height: 40px;
+            font-weight: bold;
+        }
+
+        .quickboxBottom{
+            letter-spacing: -1px;
+            line-height: 10px;
+        }
+
+        footer{
+            background-color: #292929;
+            width: 100%;
+        }
+
+        footer hr{
+            width: 100%;
+        }
+
+        .footer{
+            width:1170px;
+            background-color: #292929;
+            margin: 0 auto;
+            height: 150px;
+        }
+
+        .footertop{
+            width: 70%;
+            background-color: #292929;
+            height: 50%;
+        }
+        
+        .footerTop ul li{
+            float: left;
+            padding-right: 15px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #666666;
+            line-height: 40px;
+        }
+        
+        .footerbottom{
+            margin-top: 20px;
+            width: 100%;
+        }
+        
+        .footerBottom span{
+            padding-right: 15px;
+            font-weight: bold;
+            color: #666666;
+        }
+
+        .footerBottom p{
+            color: #666666;
+            letter-spacing: -1px;
+        }
     </style>
 </head>
 <body>
@@ -497,7 +555,28 @@
                     <div class="quickboxBottom">개선/문의사항</div>
                 </div>
             </div>   
-        </div>        
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="footerTop">
+                    <ul>
+                        <li>이용약관</li>
+                        <li>개인정보취급방침</li>
+                        <li>써브카드</li>
+                        <li>점주관리자</li>
+                        <li>Subway Listens</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="footerBottom">
+                    <span class="addr">서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span class="rep">대표: 콜린클락</span>
+                    <span class="tel">전화: 02-797-5036</span>
+                    <span class="repNum">사업자등록번호: 101-84-04143</span>
+                    <p>SUBWAY&copy; is a Resistered Trademark of subway IP LLC.&copy; 2019 Subway IP LLC. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>        
     </div>
 </body>
 </html>
