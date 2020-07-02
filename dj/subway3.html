@@ -329,39 +329,49 @@
 
         .quickMenu_1{
             width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            background-color: white;
-            padding: 20px;
-        }
-
-        .quickbox{
-            width: calc((100% - 10px * 3) / 4);
             overflow: hidden;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px 0;
         }
 
-        .quickboxLeft{
+        .quickBox{
+            width: calc((100% - 80px * 3) / 4);
             float: left;
+            overflow: hidden;
+            margin-left: 80px;
+        }
+
+        .quickBox:nth-child(1){
+            margin-left: 0;
+        }
+
+        .quickBoxRight{
+            height: 70px;
+            padding-left: 80px;
+            position: relative;
+        }
+        .quickBoxRight:after{
+            content: "";
+            position: absolute;
+            left: 0; top: 0;
             width: 70px;
-			height: 70px;
+            height: 70px;
+            /* background: blue; */
 			background-image: url("./img/icon_quickmenu.png");
 			background-repeat: no-repeat; 
         }
-
-        .quickboxRight{
-            float: right;
-        }
-        .quickbox:nth-child(1) .quickboxLeft{background-position: 0 0;}
-        .quickbox:nth-child(2) .quickboxLeft{background-position: -70px 0;}
-        .quickbox:nth-child(3) .quickboxLeft{background-position: -140px 0;}
-        .quickbox:nth-child(4) .quickboxLeft{background-position: -210px 0;}
+        .quickBox:nth-child(1) .quickBoxRight:after{background-position: 0 0;}
+        .quickBox:nth-child(2) .quickBoxRight:after{background-position: -70px 0;}
+        .quickBox:nth-child(3) .quickBoxRight:after{background-position: -140px 0;}
+        .quickBox:nth-child(4) .quickBoxRight:after{background-position: -210px 0;}
         
-        .quickboxTop{
+        .quickBoxTop{
             line-height: 40px;
             font-weight: bold;
         }
 
-        .quickboxBottom{
+        .quickBoxBottom{
             letter-spacing: -1px;
             line-height: 10px;
         }
@@ -527,32 +537,28 @@
         </section>
 
         <div class="quickMenu_1">
-            <div class="quickbox">
-                <div class="quickboxLeft"></div>
-                <div class="quickboxRight">
-                    <div class="quickboxTop">프랜차이즈</div>
-                    <div class="quickboxBottom">개설절차/투자비용 정보</div>
+            <div class="quickBox">
+                <div class="quickBoxRight">
+                    <div class="quickBoxTop">프랜차이즈</div>
+                    <div class="quickBoxBottom">개설절차/투자비용 정보</div>
                 </div>
             </div>
-            <div class="quickbox">
-                <div class="quickboxLeft"></div>
-                <div class="quickboxRight">
-                    <div class="quickboxTop">지사안내</div>
-                    <div class="quickboxBottom">수도권/지방 지사정보</div>
+            <div class="quickBox">
+                <div class="quickBoxRight">
+                    <div class="quickBoxTop">지사안내</div>
+                    <div class="quickBoxBottom">수도권/지방 지사정보</div>
                 </div>
             </div>
-            <div class="quickbox">
-                <div class="quickboxLeft"></div>
-                <div class="quickboxRight">
-                    <div class="quickboxTop">광고영상</div>
-                    <div class="quickboxBottom">TV광고/동영상</div>
+            <div class="quickBox">
+                <div class="quickBoxRight">
+                    <div class="quickBoxTop">광고영상</div>
+                    <div class="quickBoxBottom">TV광고/동영상</div>
                 </div>
             </div>
-            <div class="quickbox">
-                <div class="quickboxLeft"></div>
-                <div class="quickboxRight">
-                    <div class="quickboxTop">1:1문의</div>
-                    <div class="quickboxBottom">개선/문의사항</div>
+            <div class="quickBox">
+                <div class="quickBoxRight">
+                    <div class="quickBoxTop">1:1문의</div>
+                    <div class="quickBoxBottom">개선/문의사항</div>
                 </div>
             </div>   
         </div>
