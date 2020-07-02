@@ -374,54 +374,64 @@
         .quickBoxBottom{
             letter-spacing: -1px;
             line-height: 10px;
+            font-size: 10px;
         }
 
         footer{
             background-color: #292929;
             width: 100%;
+            position: relative;
         }
 
-        footer hr{
+        footer::after{
+            position: absolute;
+            content: "";
             width: 100%;
+            height: 1px;
+            background-color: #666666;
+            left:0;
+            top: 80px;
         }
 
         .footer{
             width:1170px;
             background-color: #292929;
             margin: 0 auto;
-            height: 150px;
         }
 
         .footertop{
-            width: 70%;
+            width: 100%;
             background-color: #292929;
-            height: 50%;
         }
 
         .footerTop ul {
             overflow: hidden;
+            padding: 20px 0;
         }
         
         .footerTop ul li{
             float: left;
-            padding-right: 15px;
+            margin-right: 20px;
             font-weight: bold;
             color: #666666;
             line-height: 40px;
+            cursor: pointer;
         }
         
         .footerbottom{
-            margin-top: 20px;
             width: 100%;
+            padding: 20px 0;
         }
         
         .footerBottom span{
-            padding-right: 15px;
+            margin-right: 15px;
             font-weight: bold;
             color: #666666;
+            cursor: pointer;
         }
 
         .footerBottom p{
+            margin-top: 5px;
             color: #666666;
             letter-spacing: -1px;
         }
