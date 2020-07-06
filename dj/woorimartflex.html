@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>woorimart</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        .container{
+            width: 100%;
+        }
+
+        .boxes{
+            width: 1200px;
+            margin: 0 auto;
+            flex-grow: 1;
+        }
+        
+        .boxTop{
+            width: 100%;
+            display: flex;
+            flex-grow: 0.5;
+        }
+
+        .boxBottom{
+            width: 100%;
+            display: flex;
+            flex-grow: 0.5;
+        }
+        .saleInfo{
+            margin: 0 auto;
+            flex-grow: 1;
+            margin: 0 0 20px;
+            padding: 20px 10px;
+            border: 1px solid #e9e9e9;
+            margin-bottom: 20px;
+            width: ((100% - 20px * 2 ) / 3);
+        }
+
+        .saleInfo img{
+            width: 100%;
+            transition: 1s;
+            cursor: pointer;
+        }
+
+        .saleInfo img:hover{
+            background-color: black;
+            opacity: 0.8;
+            transition: 1s;
+        }
+
+        .saleInfo .title{
+            margin: 5px 0;
+        }
+
+        .saleInfo .name{
+            font-size: 15px;
+            color: #48a41c;
+        }
+
+        .saleInfo .period{
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxes">
+            <div class="boxTop">
+                <div class="saleInfo">
+                    <img src="./img/1.jpg" alt="">
+                    <div class="title">대한민국동행세일</div>
+                    <div class="name">우리마트 감천점</div>
+                    <div class="period">행사기간: 2020.06.30 ~ 2020.07.05</div>
+                </div>
+                <div class="saleInfo">
+                    <img src="./img/2.jpg" alt="">
+                    <div class="title">창립23주년기념 대특매</div>
+                    <div class="name">우리마트 감천점</div>
+                    <div class="period">행사기간: 2020.06.30 ~ 2020.07.05</div>
+                </div>
+                <div class="saleInfo">
+                    <img src="./img/3.jpg" alt="">
+                    <div class="title">긴급재난지원세일</div>
+                    <div class="name">우리마트 감천점</div>
+                    <div class="period">행사기간: 2020.06.30 ~ 2020.07.05</div>
+                </div>
+            </div>
+            <div class="boxBottom">
+                <div class="saleInfo">
+                    <img src="./img/4.jpg" alt="">
+                    <div class="title">화수목 큰장날</div>
+                    <div class="name">우리마트 감천점</div>
+                    <div class="period">행사기간: 2020.06.30 ~ 2020.07.05</div>
+                </div>
+                <div class="saleInfo">
+                    <img src="./img/5.jpg" alt="">
+                    <div class="title">화수목 큰장날</div>
+                    <div class="name">우리마트 감천점</div>
+                    <div class="period">행사기간: 2020.06.30 ~ 2020.07.05</div>
+                </div>
+                <div class="saleInfo">
+                    <img src="./img/6.jpg" alt="">
+                    <div class="title">보름달같이 풍성한 할인전</div>
+                    <div class="name">우리마트 감천점</div>
+                    <div class="period">행사기간: 2020.06.30 ~ 2020.07.05</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
