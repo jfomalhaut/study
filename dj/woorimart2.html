@@ -15,120 +15,115 @@
             width: calc((100% - 20px * 2) / 3);
             margin-left: 20px;
             margin-bottom: 20px;
+            padding: 10px;
             border: 1px solid #e9e9e9;
             box-sizing: border-box;
-            padding: 10px;
         }
 
         .saleInfo:nth-child(3n+1){
             margin-left: 0;
         }
-
-        .hover{
-            display: none;
-        }
-        
         .saleInfo .img{
-			height: 430px;
-			margin-bottom: 20px;
-			overflow: hidden;
-			cursor: pointer;
-			position: relative;
+            overflow: hidden;
+            height: 430px;
+            position: relative;
+            margin-bottom: 20px;
         }
 
-        .saleInfo .img > img{
-			width: 100%;
-		}
+        .saleInfo .img img{
+            width: 100%;
+        }
 
-        .saleInfo .img .hover{
+        .saleInfo .img .cover{
             position: absolute;
             left: 0;
             right: 0;
             bottom: 0;
-            right: 0;
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.7);
-            display: none;
+            display:none
         }
 
-        .saleInfo .img:hover .hover{
+        .saleInfo .img:hover .cover{
             display: flex;
         }
 
-        .saleInfo .hover img {
-			margin: auto;
-			width: 50px;
-		}
+        .saleInfo .img .cover img{
+            margin: auto;
+            width: 50px;
+        }
+
+        
     </style>
 </head>
 <body>
     <div class="container">
         <div class="saleInfo">
             <div class="img">
-                <img src="./img/woori/1.jpg">
-                <div class="hover">
+                <img src="./img/woori/1.jpg" alt="">
+                <div class="cover">
                     <img src="./img/woori/expand.png">
                 </div>
             </div>
             <div class="name">큰장날</div>
             <div class="store">우리마트 감천점</div>
-            <div class="period">오늘 내일</div>
+            <div class="period">오늘 ~ 내일</div>
         </div>
         <div class="saleInfo">
             <div class="img">
-                <img src="./img/woori/2.jpg">
-                <div class="hover">
+                <img src="./img/woori/2.jpg" alt="">
+                <div class="cover">
                     <img src="./img/woori/expand.png">
                 </div>
             </div>
             <div class="name">큰장날</div>
             <div class="store">우리마트 감천점</div>
-            <div class="period">오늘 내일</div>
+            <div class="period">오늘 ~ 내일</div>
         </div>
         <div class="saleInfo">
             <div class="img">
-                <img src="./img/woori/3.jpg">
-                <div class="hover">
+                <img src="./img/woori/3.jpg" alt="">
+                <div class="cover">
                     <img src="./img/woori/expand.png">
                 </div>
             </div>
             <div class="name">큰장날</div>
             <div class="store">우리마트 감천점</div>
-            <div class="period">오늘 내일</div>
+            <div class="period">오늘 ~ 내일</div>
         </div>
         <div class="saleInfo">
             <div class="img">
-                <img src="./img/woori/4.jpg">
-                <div class="hover">
+                <img src="./img/woori/4.jpg" alt="">
+                <div class="cover">
                     <img src="./img/woori/expand.png">
                 </div>
             </div>
             <div class="name">큰장날</div>
             <div class="store">우리마트 감천점</div>
-            <div class="period">오늘 내일</div>
+            <div class="period">오늘 ~ 내일</div>
         </div>
         <div class="saleInfo">
             <div class="img">
-                <img src="./img/woori/5.jpg">
-                <div class="hover">
+                <img src="./img/woori/5.jpg" alt="">
+                <div class="cover">
                     <img src="./img/woori/expand.png">
                 </div>
             </div>
             <div class="name">큰장날</div>
             <div class="store">우리마트 감천점</div>
-            <div class="period">오늘 내일</div>
+            <div class="period">오늘 ~ 내일</div>
         </div>
         <div class="saleInfo">
             <div class="img">
-                <img src="./img/woori/6.jpg">
-                <div class="hover">
+                <img src="./img/woori/6.jpg" alt="">
+                <div class="cover">
                     <img src="./img/woori/expand.png">
                 </div>
             </div>
             <div class="name">큰장날</div>
             <div class="store">우리마트 감천점</div>
-            <div class="period">오늘 내일</div>
+            <div class="period">오늘 ~ 내일</div>
         </div>
     </div>
 </body>
