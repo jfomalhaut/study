@@ -1,0 +1,128 @@
+<html>
+<head>
+	<style>
+		.container {
+			display: flex;
+			width: 1000px;
+			margin: 0 auto;
+			flex-wrap: wrap;
+		}
+
+		.leaf {
+			width: calc((100% - 40px) / 3);
+			margin-left: 20px;
+			margin-bottom: 20px;
+			padding: 10px;
+			box-sizing: border-box;
+			border: 1px solid #ddd;
+		}
+
+		.leaf:nth-child(3n+1) {
+			margin-left: 0;
+		}
+
+		.leaf .img {
+			height: 430px;
+			margin-bottom: 20px;
+			overflow: hidden;
+			cursor: pointer;
+			position: relative;
+		}
+
+		.leaf .img > img{
+			width: 100%;
+		}
+
+		.leaf .img .cover {
+			position: absolute;
+			left: 0; right: 0; bottom: 0; right: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+			color: white;
+			font-weight: bold;
+			display: none;
+		}
+
+		.leaf .img:hover .cover {
+			display: flex;
+		}
+
+		.leaf .cover img {
+			margin: auto;
+			width: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="leaf">
+			<div class="img">
+				<img src="./img/woori/1.jpg">
+				<div class="cover">
+					<img src="https://woori-mart.co.kr/assets/img/expand.png">
+				</div>
+			</div>
+			<div class="title">화수목 큰장날</div>
+			<div class="name">우리마트 감천점</div>
+			<div class="period">오늘 ~ 내일</div>
+		</div>
+		<div class="leaf">
+			<div class="img">
+				<img src="./img/woori/2.jpg">
+				<div class="cover">
+					<img src="https://woori-mart.co.kr/assets/img/expand.png">
+				</div>
+			</div>
+			<div class="title">화수목 큰장날</div>
+			<div class="name">우리마트 감천점</div>
+			<div class="period">오늘 ~ 내일</div>
+		</div>
+		<div class="leaf">
+			<div class="img">
+				<img src="./img/woori/3.jpg">
+				<div class="cover">
+					<img src="https://woori-mart.co.kr/assets/img/expand.png">
+				</div>
+			</div>
+			<div class="title">화수목 큰장날</div>
+			<div class="name">우리마트 감천점</div>
+			<div class="period">오늘 ~ 내일</div>
+		</div>
+		<div class="leaf">
+			<div class="img">
+				<img src="./img/woori/4.jpg">
+				<div class="cover">
+					<img src="https://woori-mart.co.kr/assets/img/expand.png">
+				</div>
+			</div>
+			<div class="title">화수목 큰장날</div>
+			<div class="name">우리마트 감천점</div>
+			<div class="period">오늘 ~ 내일</div>
+		</div>
+		<div class="leaf">
+			<div class="img">
+				<img src="./img/woori/5.jpg">
+				<div class="cover">
+					<img src="https://woori-mart.co.kr/assets/img/expand.png">
+				</div>
+			</div>
+			<div class="title">화수목 큰장날</div>
+			<div class="name">우리마트 감천점</div>
+			<div class="period">오늘 ~ 내일</div>
+		</div>
+		<div class="leaf">
+			<div class="img">
+				<img src="./img/woori/6.jpg">
+				<div class="cover">
+					<img src="https://woori-mart.co.kr/assets/img/expand.png">
+				</div>
+			</div>
+			<div class="title">화수목 큰장날</div>
+			<div class="name">우리마트 감천점</div>
+			<div class="period">오늘 ~ 내일</div>
+		</div>
+	</div>
+</body>
+</html>
