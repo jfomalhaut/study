@@ -1,0 +1,57 @@
+<html>
+<head>
+    <style>
+        .box{ width: 700px; position: relative; }
+        .box img{ width: 100%; }
+        .cover{
+            position: absolute;
+            width: calc(100% - 40px);
+            height: calc(100% - 40px);
+            left: 20px; top: 20px;
+            color: white; background: #C40F39;
+            opacity: 0; transition: .4s;
+            text-align: center;
+        }
+        .desc1{ margin: 20px; font-size: 20px;}
+        .desc2{ font-size: 30px; font-weight: bold; }
+        .plus{
+            margin-top: 100px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            transition-delay: .2s;
+            transition-duration: .5s;
+        }
+        .plus:after{
+            content: ''; position: absolute;
+            left: 0; top: 50%;
+            height: 1px; width: 100%; background: white;
+        }
+        .plus:before{
+            content: ''; position: absolute;
+            left: 50%; top: 0%;
+            height: 100%; width: 1px; background: white;
+        }
+        .box:hover .cover{
+            opacity: 1;
+        }
+        .box:hover .plus{
+            transform: rotate(180deg);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://dfrkkcv2hg1jc.cloudfront.net/data/main/file1_1519115272jpu2nkl0v8.jpg">
+        <div class="cover">
+            <div class="desc1">PEN</div>
+            <div class="desc1">153 네오 만년필</div>
+            <div class="plus"></div>
+        </div>
+    </div>
+</body>
+</html>
