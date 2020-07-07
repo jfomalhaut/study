@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>monami</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        
+        .container{
+            width: 500px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .container .img{
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #e9e9e9;
+            position: relative;
+        }
+        .container .img > img{
+            width: 100%;
+        }
+
+        .container .img .cover{
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            width: 427px;
+            height: 636px;
+            background: hotpink;
+            display: none;
+            animation-name: move;
+        } 
+
+        .container .img > img:hover .cover {
+            display: flex;
+        } 
+
+        .container .img > img:hover .cover img{
+            display: flex; 
+        } 
+        .container .img .cover img{
+            margin: auto;
+            width: 37px;
+            animation-name: move;
+            animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			animation-timing-function: ease-in;
+        }
+
+        @keyframes move{
+            100%{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="./img/monami/1.jpg" alt="">
+            <div class="cover">FOUNTAIN PEN 라인만년필<img src="./img/monami/icon.png"></div>
+        </div>
+    </div>
+</body>
+</html>
