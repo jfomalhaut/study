@@ -1,0 +1,35 @@
+<html>
+<head>
+	<style>
+		.box {
+			width: 200px;
+			height: 200px;
+			background-color: tomato;
+			margin-top: 100px;
+			animation-name: move;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			animation-timing-function: ease-in;
+		}
+
+		/* button:hover + .box { */
+			/* transform: translateX(100px);
+			width: 300px; */
+		/* } */
+
+		@keyframes move {
+			0% { transform: scale(1); }
+			25% { transform: scale(1.1); background-color: yellowgreen; }
+			50% { transform: scale(1); }
+			75% { transform: scale(1.1); background-color: yellowgreen; }
+			100% { transform: scale(1); }
+		}
+		
+	</style>
+</head>
+<body>
+	<button>이동</button>
+	<div class="box"></div>
+</body>
+</html>
