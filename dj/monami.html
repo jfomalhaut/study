@@ -46,16 +46,15 @@
         .container .img:hover .cover {
             display: flex;
         } 
+        .container .img .cover img{
+            transition: 1s;
+            width: 37px;
+            margin: auto; 
+        }
 
         .container .img:hover .cover img{
-            display: flex; 
+            transform: rotate(180deg);
         } 
-        .container .img .cover img{
-            width: 37px;
-            margin: auto;
-            transform: rotate(360deg);
-            transition: 1s;
-        }
     </style>
 </head>
 <body>
@@ -65,7 +64,9 @@
             <div class="cover">
                 <div class="center">
                     <div class="font">FOUNTAIN PEN 라인만년필</div>
-                    <img src="./img/monami/icon.png">
+                    <div class="icon">
+                        <img src="./img/monami/icon.png">
+                    </div>
                 </div>
             </div>
         </div>
