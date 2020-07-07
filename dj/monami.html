@@ -43,17 +43,19 @@
             margin-bottom: 10px;
             font-size: 20px;
         }
+
+        .center .icon{
+            margin: auto;
+            width: 37px;
+        }
+        
         .container .img:hover .cover {
             display: flex;
         } 
-        .container .img .cover img{
-            transition: 1s;
-            width: 37px;
-            margin: auto; 
-        }
 
-        .container .img:hover .cover img{
-            transform: rotate(180deg);
+        .container .img:hover .center .icon img{
+            display: flex;
+            transform: rotate(360deg);
         } 
     </style>
 </head>
