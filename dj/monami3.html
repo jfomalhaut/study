@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>monami</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+
+        .box{
+            width: 700px;
+            position: relative;
+        }
+
+        .box img{
+            width: 100%;
+        }
+
+        .cover{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            color: white;
+            text-align: center;
+            opacity: 0;
+            transition: .4s;
+            padding: 20px;
+        }
+
+        .back{
+            background-color: crimson;
+            height: 100%;
+        }
+        .desc1{
+            font-size: 20px;
+        }
+
+        .desc2{
+            font-size: 30px; 
+            font-weight: bold;
+        }
+
+        .ten{
+            margin-top: 100px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            transition-delay: .2s;
+            transition-duration: .5s;
+        }
+
+        .ten:after{
+            content:'';
+            position: absolute;
+            left: 0; 
+            top: 50%;
+            width: 100%;
+            height: 1px;
+            background: white;
+            transform: translateY(-50%);
+        }
+
+        .ten:before{
+            content:'';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background: white;
+            transform: translateX(-50%);
+        }
+
+        .box:hover .cover{
+            opacity: 1;
+        }
+
+        .box:hover .ten{
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://dfrkkcv2hg1jc.cloudfront.net/data/main/file1_1519115272jpu2nkl0v8.jpg">
+        <div class="cover">
+            <div class="back">
+                <div class="desc1">PEN</div>
+                <div class="desc2">10주년 만년필</div>
+                <div class="ten"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

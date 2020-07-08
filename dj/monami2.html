@@ -23,19 +23,25 @@
             transition-delay: .2s;
             transition-duration: .5s;
         }
+        
         .plus:after{
             content: ''; position: absolute;
             left: 0; top: 50%;
             height: 1px; width: 100%; background: white;
+            transform: translateY(-50%);
         }
+        
         .plus:before{
             content: ''; position: absolute;
             left: 50%; top: 0%;
             height: 100%; width: 1px; background: white;
+            transform: translateX(-50%);
         }
+       
         .box:hover .cover{
             opacity: 1;
         }
+        
         .box:hover .plus{
             transform: rotate(180deg);
         }
