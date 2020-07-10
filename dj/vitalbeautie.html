@@ -54,7 +54,7 @@
 
         .utility ul li{
             line-height: 100px;
-            font-size: 15px;
+            font-size: 12px;
             cursor: pointer;
             margin-left: 20px;
         }
@@ -69,6 +69,143 @@
         main .img{
             width: 1580px;
             margin: 0 auto;
+            margin-bottom: 50px;
+            cursor: pointer;
+        }
+
+        section{
+            width: 1580px;
+            margin: 0 auto;
+        }
+        .title{
+            margin: 20px auto
+        }
+        .make{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            padding: 10px;
+        }
+
+        .making1{
+            height: 380px;
+            border: 1px solid lightgray;
+            cursor: pointer;
+            background-image: url("./img/vitalbeautie/1.jpg");
+        }
+
+        .making2{
+            height: 380px;
+            border: 1px solid lightgray;
+            cursor: pointer;
+            background-image: url("./img/vitalbeautie/2.jpg");
+        }
+
+        .making3{
+            height: 380px;
+            border: 1px solid lightgray;
+            cursor: pointer;
+            background-image: url("./img/vitalbeautie/3.jpg");
+        }
+
+        .making4{
+            height: 380px;
+            border: 1px solid lightgray;
+            cursor: pointer;
+            background-image: url("./img/vitalbeautie/4.jpg");
+        }
+
+        .making5{
+            height: 380px;
+            border: 1px solid lightgray;
+            cursor: pointer;
+            background-image: url("./img/vitalbeautie/5.jpg");
+        }
+
+        .making6{
+            height: 380px;
+            border: 1px solid lightgray;
+            cursor: pointer;
+            background-image: url("./img/vitalbeautie/6.jpg");
+        }
+
+        .making7{
+            height: 380px;
+            border: 1px solid lightgray;
+            cursor: pointer;
+            background-image: url("./img/vitalbeautie/7.jpg");
+        }
+
+        .making8{
+            height: 380px;
+            border: 1px solid lightgray;
+            cursor: pointer;
+            background-image: url("./img/vitalbeautie/8.jpg");
+        }
+        .name{
+            margin-top:20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .explain{
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .share{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            padding: 10px;
+        }
+
+        .sharing1{
+          height: 300px;
+          cursor: pointer;
+          border: 1px solid lightgray;
+          background-image: url("./img/vitalbeautie/11.png");
+          background-size: 100% 100%;
+        }
+        
+        .sharing2{
+          height: 300px;
+          cursor: pointer;
+          border: 1px solid lightgray;
+          background-image: url("./img/vitalbeautie/12.png");
+          background-size: 100% 100%;
+        }
+
+        .sharing3{
+          height: 300px;
+          cursor: pointer;
+          border: 1px solid lightgray;
+          background-image: url("./img/vitalbeautie/13.jpg");
+          background-size: 100% 100%;
+        }
+
+        .sharing4{
+          height: 300px;
+          cursor: pointer;
+          border: 1px solid lightgray;
+          background-image: url("./img/vitalbeautie/14.jpg");
+          background-size: 100% 100%;
+        }
+
+        .find{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 20px;
+            padding: 10px;
+        }
+
+        .found1{
+            height: 310px;
+            background-image: url("./img/vitalbeautie/");
+            border: 1px solid lightgray;
         }
     </style>
 </head>
@@ -90,9 +227,9 @@
                         <li>LOGIN</li>
                         <li>JOIN</li>
                         <li>FIND A STORE</li>
+                        <li></li>
                     </ul>
-                </div>
-                <img src="./img/vitalbeautie/btn_search.png">
+                </div> 
             </div>
         </header>
 
@@ -103,32 +240,78 @@
         </main>
 
         <section>
+            <div class="title">
+                <h2>아름다움<strong>을 만들다</strong><small>STEP.01</small></h2>
+            </div>
             <div class="make">
-                <div class="making"></div>
-                <div class="making"></div>
-                <div class="making"></div>
-                <div class="making"></div>
-                <div class="making"></div>
-                <div class="making"></div>
-                <div class="making"></div>
-                <div class="making"></div>
+                <div class="making1">
+                    <div class="name">명작수</div>
+                    <div class="explain"><small>인삼의 뿌리와 열매를 담은 홍삼의 명작</small></div>
+                </div>
+                <div class="making2">
+                    <div class="name">자음보액</div>
+                    <div class="explain"><small>홍삼이 함유된 프리미엄 홍삼 앰플</small></div>
+                </div>
+                <div class="making3">
+                    <div class="name">메타그린 골드</div>
+                    <div class="explain"><small>고지방,고탄수화물,고열량으로부터 자유롭게 해줌</small></div>
+                </div>
+                <div class="making4">
+                    <div class="name">슬리머디엑스</div>
+                    <div class="explain"><small>간편한 체지방 감소를 위한 슬리밍 앰플</small></div>
+                </div>
+                <div class="making5">
+                    <div class="name">액티브멀티팩</div>
+                    <div class="explain"><small>풍부한 비타민과 미네랄 함유된 데일리 케어</small></div>
+                </div>
+                <div class="making6">
+                    <div class="name">프로바이오</div>
+                    <div class="explain"><small>100억 복합 프로바이오틱스</small></div>
+                    
+                </div>
+                <div class="making7">
+                    <div class="name">슈퍼콜라겐 젤리</div>
+                    <div class="explain"><small>속부터 꽉 채워주세요</small></div>
+                </div>
+                <div class="making8">
+                    <div class="name">트루아이</div>
+                    <div class="explain"><small>눈 노화 케어 건강기능식품</small></div>
+                </div>
             </div>
 
+            <div class="title">
+                <h2>아름다움<strong>을 함께 나누다</strong><small>STEP.02</small></h2>
+            </div>
             <div class="share">
-                <div class="sharing"></div>
-                <div class="sharing"></div>
-                <div class="sharing"></div>
-                <div class="sharing"></div>
+                <div class="sharing1"></div>
+                <div class="sharing2"></div>
+                <div class="sharing3">
+                    <div class="name">MD's 추천</div>
+                    <div class="explain"><small>앰플<br><br>홍삼엑기스</small></div>
+                </div>
+                <div class="sharing4">
+                    <div class="name">베스트 제품</div>
+                    <div class="explain"><small>명작수<br><br>홍삼이 함유된 프리미엄 홍삼 앰플</small></div>
+                </div>
             </div>
 
+            <div class="title">
+                <h2>아름다움<b>을 찾다</b><small>STEP.03</small></h2>
+            </div>
             <div class="find">
-                <div class="found"></div>
-                <div class="found"></div>
-                <div class="found"></div>
-                <div class="found"></div>
-                <div class="found"></div>
+                <div class="found1">
+                    <div class="name"></div>
+                    <div class="explain"></div>
+                </div>
+                <div class="found2"></div>
+                <div class="found3"></div>
+                <div class="found4"></div>
+                <div class="found5"></div>
             </div>
 
+            <div class="title">
+                <h2>아름다움<b>을 보고 담다</b><small>STEP.04</small></h2>
+            </div>
             <div class="putIn">
                 <div class="put_in"></div>
                 <div class="put_in"></div>

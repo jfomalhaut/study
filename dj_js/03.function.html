@@ -1,0 +1,30 @@
+<html>
+<head>
+
+</head>
+<body>
+    <button onclick="plus()">
+        <h1>클릭</h1>
+    </button>
+
+    <button onclick="plus()">
+        <h1>클릭2</h1>
+    </button>
+    
+    
+    <script>
+        var num1 = 200; // 전역변수
+        
+        function plus() { //함수는 하나의 트리거가 필요함   변수를 어디에 만드냐에 따라 지역변수 전역 변수로 나뉨
+            //alert('더했습니다.'); // alert는 경고창을 의미함  함수는 모듈을 의미함 
+            var num2 = 300; // 지역변수 
+            var result = num1 + num2;
+            
+            alert(result);
+        }
+        
+        //alert(num2); 실행되지않음 
+    </script>
+
+</body>
+</html>
