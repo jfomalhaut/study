@@ -2,8 +2,12 @@
 <head>
     <title>example</title>
     <style>
-        *{margin: 0; padding: 0;}
-
+        *{margin: 0; padding: 0;  list-style: none;}
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
         header{
             width: 100%;
             height: 150px;
@@ -11,6 +15,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            border-bottom: 1px solid lightgray;
         }
 
         header h1{
@@ -19,16 +24,54 @@
 
         main{
             flex-grow: 1;
+            width: 100%;
+            background-color: lightgray;
+            display: flex;
         }
+        .box{
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            background-color: white;
+        }
+        .aside1{
+            width: 200px;
+            flex-shrink: 0;
+            border-right: 1px solid black;
+            text-align: center;
+        }
+
+        .aside1 ul{
+           margin-top: 10px;
+        }
+        
+        .section{
+            flex-grow: 1;
+            text-align: justify;
+            padding: 10px;
+            overflow: scroll;
+        }
+        
+        .aside2{
+            width: 200px;
+            flex-shrink: 0;
+            border-left: 1px solid black;
+        }
+        
         footer{
             width: 100%;
             height: 100px;
             background: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid lightgray;
         }
 
         footer .copy{
             text-align: center;
         }
+        
     </style>
 </head>
 <body>
@@ -38,9 +81,17 @@
         </header>
 
         <main>
-            <div class="aside"></div>
-            <div class="section"></div>
-            <div class="aside"></div>
+            <div class="box">
+                <div class="aside1">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe excepturi minus autem eius sed deserunt mollitia iste nemo vel? Vero alias beatae eveniet et. Delectus eveniet necessitatibus ea ab dolorem fugiat. Deserunt, quibusdam aperiam cumque mollitia accusantium placeat rerum molestiae commodi repellat doloremque! Ea delectus repellat consequuntur reprehenderit dolor amet exercitationem dolores hic, ut magnam quas, beatae, molestias veniam harum fugit modi quasi nobis tenetur repudiandae esse eos cumque porro minus voluptatibus. Veritatis excepturi reprehenderit a quibusdam sunt iusto, consequuntur doloremque voluptatem perspiciatis tenetur perferendis officia, corporis commodi reiciendis incidunt voluptatibus tempore consectetur nostrum! Fuga eius soluta autem enim nam officiis delectus tempora repellat ab, quos quisquam, maiores hic in ratione illum optio! Ut, magnam reprehenderit praesentium commodi sit, numquam neque similique earum ad beatae, est tenetur cum! Placeat corrupti tenetur distinctio voluptatibus officiis vel dolorum obcaecati quae id culpa laborum perferendis magnam reprehenderit architecto similique nam, autem soluta non praesentium aliquam quia debitis commodi fugiat numquam? Tenetur deleniti commodi rem fugiat cum deserunt, minus, inventore in quis amet temporibus velit nostrum unde facere perferendis recusandae nulla natus maxime itaque? Optio quod temporibus exercitationem obcaecati iste aperiam at iure eligendi aspernatur sequi praesentium repudiandae impedit vero, dolorem distinctio. Itaque numquam optio quo omnis placeat, quibusdam alias minus dolorem iusto accusantium cupiditate deserunt voluptatibus? Dolorem veniam minima recusandae modi inventore quisquam quae mollitia repellat tenetur consequatur architecto eveniet animi doloremque, molestias dignissimos eaque cum culpa nulla blanditiis laborum! Ea natus ad a porro magni reiciendis assumenda error ratione sequi ipsam unde, laudantium aliquam accusamus iure beatae ipsa! Molestias, sunt sint minus nam qui eaque voluptatum adipisci veniam, culpa libero natus commodi! Esse, et, placeat minima quasi repellat quae fugiat hic optio a aliquid nulla fuga tempore perferendis recusandae voluptates non facere. Ex odit facilis eius dicta minus suscipit? Obcaecati consectetur numquam quam minus rerum exercitationem alias velit at optio! Dignissimos, facere distinctio repellat officiis tempora, velit magni nemo incidunt exercitationem dolorum id tempore delectus fugit. Unde animi quasi expedita ullam? Rem expedita repellendus quae, perspiciatis, voluptas praesentium itaque quibusdam autem, obcaecati asperiores perferendis dolorum vel excepturi dignissimos eos recusandae laudantium omnis sequi ducimus! A ipsum reprehenderit ab voluptates eius suscipit expedita enim perspiciatis animi ratione optio, consequatur libero soluta, id beatae, eaque veritatis cum nobis error nostrum earum. Optio vitae illo vero nulla iusto error quos quasi porro eum tempora, iste ipsa officia ducimus perspiciatis voluptates. Eum aspernatur iusto sapiente nesciunt? Doloremque quas quaerat, vel architecto commodi facilis iusto velit sit tempore eum fugit minus dolorum alias earum nesciunt, accusamus asperiores adipisci, aut quasi quam et! Est cumque accusantium ratione ducimus, perferendis tempore sint voluptatem dolore beatae ex magni explicabo! Quasi vel doloribus neque, animi aperiam cupiditate nostrum quaerat. Impedit unde, ex dolorem soluta, sequi ipsa saepe quisquam provident numquam, vero nostrum nulla explicabo voluptatum amet consequatur vitae ab aperiam nesciunt sapiente. Deleniti rerum quae eligendi quod culpa saepe ipsa distinctio esse? Quasi, laborum cupiditate ullam debitis temporibus incidunt magnam sapiente fuga error quibusdam, ipsam sequi? Quia consequatur temporibus ipsa at obcaecati totam provident ea autem aliquid labore facere impedit tenetur in possimus, officia vel pariatur. Corporis, tenetur aspernatur nihil odio nesciunt consequatur necessitatibus minus ratione molestias! Rerum amet laboriosam ea blanditiis, sapiente dolorem pariatur vero alias aut dolorum cumque iusto quas iure perferendis culpa modi omnis possimus maiores quis provident fugit. Repellat molestias temporibus, corrupti minus nihil praesentium illum corporis atque exercitationem fugiat doloremque illo et perspiciatis accusantium! Velit voluptatum fuga, nulla doloremque laboriosam officiis ut reiciendis! Molestias alias facilis minima, ipsa a sequi aperiam natus? Possimus, reiciendis ut cupiditate mollitia maiores perspiciatis nam veritatis rem odit sit eligendi officiis ducimus, ratione officia molestias libero quas distinctio deserunt. Eaque eos necessitatibus natus alias? Repellat tempora alias, perferendis fuga veniam nulla nesciunt unde architecto laudantium harum ad explicabo placeat nobis vel at aspernatur, sunt hic odit ipsam consequatur? Laborum consequuntur similique neque officia quibusdam reiciendis impedit corrupti at. Pariatur minus ullam, sequi, tempora iste unde possimus nisi voluptatem consequuntur alias necessitatibus repudiandae aspernatur blanditiis quae, obcaecati eligendi modi vero illo quibusdam odit consectetur fugiat eos omnis! Consequatur expedita obcaecati minus maiores dolorum porro corporis accusamus alias saepe assumenda quibusdam illo optio tenetur itaque sint facilis, suscipit asperiores possimus labore eius?</div>
+                <div class="aside2">광고</div>
+            </div> 
         </main>
         
         <footer>
