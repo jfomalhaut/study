@@ -1,0 +1,28 @@
+<html>
+<head>
+
+</head>
+<body>
+
+	<button onclick="plus()">
+		<h1>클릭</h1>
+	</button>
+
+	<button onclick="plus()">
+		<h1>클릭2</h1>
+	</button>
+
+	<script>
+		var num1 = 200; // 전역변수
+
+		function plus() {
+			var num2 = 300; // 지역변수
+			var result = num1 + num2;
+			alert(result);
+		}
+
+		// alert(num2); // 작동하지 않는다.
+
+	</script>
+</body>
+</html>

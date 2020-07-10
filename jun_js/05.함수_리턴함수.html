@@ -1,0 +1,31 @@
+<html>
+<body>
+	<script>
+		
+		var data = basic();
+
+		function basic() {
+			var result = 1 + 1;
+			return result;
+		}
+
+		// 25,900 문자열 => 숫자로 바꿔. 25900
+		// 25900 에 수량(5) 곱했다.
+		// 나온 값을 출력 X
+		// 나온 값을 다시 콤마를 넣어줘.
+		// 출력
+
+		var number = comma(100292318391237900);
+		document.write(number);
+
+
+		function comma(num){
+			return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		}
+
+		// 1. 두 숫자를 넣으면 곱해서 되돌려주는 리턴 함수를 만들어보기
+		// 2. 금액을 넣으면 "원"이라는 글자가 뒤에 찍혀서 되돌아오는 리턴 함수 만들기.
+
+	</script>
+</body>
+</html>
