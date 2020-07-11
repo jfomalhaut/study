@@ -5,6 +5,13 @@
 		var number2 = prompt('두 번째 숫자를 입력해주세요.') * 1;
 		var number3 = prompt('세 번째 숫자를 입력해주세요.') * 1;
 
+		var result = multiple(number1, number2, number3);
+		console.log(result);
+
+		function multiple(num1, num2, num3) {
+			return num1 * num2 * num3;
+		}
+
 		// 문자형 (String) => 문자로 합쳐짐 , 숫자형(Number) => 숫자끼리 더할 수 있다.
 		// var type = typeof(number1); // 타입을 알기 위해 사용
 		
