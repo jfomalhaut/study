@@ -1,0 +1,22 @@
+<html>
+<body>
+	<script>
+		const STANDARD = 50;
+		var number = prompt('0~100 사이의 숫자를 입력하세요') * 1;
+
+		if (number < 101 && number > -1) { // && and / || or
+			if (number > STANDARD) { // number가 10보다 클 때
+				alert('입력하신 숫자가 ' + STANDARD + '보다 큽니다');
+			} else if (number < STANDARD) {
+				alert('입력하신 숫자가 ' + STANDARD + '보다 작습니다');
+			} else {
+				alert(`입력하신 숫자는 ${STANDARD}입니다`);
+			}
+		} else {
+			alert('올바르지 않은 입력입니다');
+		}
+
+
+	</script>
+</body>
+</html>
