@@ -1,0 +1,57 @@
+<html>
+<body>
+	<script>
+		var sMath = prompt('수학 점수를 입력하세요') * 1;
+        if (100 < sMath && 0 > sMath) {
+            error();
+        } else {
+            var sKorean = prompt('국어 점수를 입력하세요') * 1;
+            if (100 < sKorean && 0 > sKorean) {
+                var sEnglish = prompt('영어 점수를 입력하세요') * 1;
+                if (100 < sEnglish && 0 > sEnglish) {
+                    var total = sMath + sKorean + sEnglish;
+                    var avg = Math.round(total / 3); // 소수점 반올림
+                    var grade = "";
+            
+                    if (avg < 101 && avg > -1){ 
+                        if (100 >= avg && avg >= 91) {
+                            grade = 'A';
+                        } else if (90 >= avg && avg >= 81) {
+                            grade = 'B';
+                        } else if (80 >= avg && avg >= 71) {
+                            grade = 'C';
+                        } else if (70 >= avg && avg >= 61) {
+                            grade = 'D';
+                        } else if (60 >= avg && avg >= 51) {
+                            grade = 'E';
+                        } else if (50 >= avg) {
+                            grade = 'F';
+                        } else {
+                            error();
+                        }
+                        alert(grade + '등급입니다');
+                    }
+                } else {
+                    error();  
+                }
+            } else {
+                error();
+            }
+
+        }
+
+        function error () {
+            alert('잘못된 입력입니다.');
+        }
+
+		// 입력받은 값에 따라 어떤 등급에 해당하는지를 alert로 구분하세요.
+		// A : 91 ~ 100
+		// B : 81 ~ 90
+		// C : 71 ~ 80
+		// D : 61 ~ 70
+		// E : 51 ~ 60
+		// F : ~ 50
+
+	</script>
+</body>
+</html>
