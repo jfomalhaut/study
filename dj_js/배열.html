@@ -1,0 +1,25 @@
+<html>
+<body>
+    <script>
+         var arr = new Array(1, 2, 3, 4);
+         var arr2 = [1, 2, 3, 4, 5]; // 많은 데이터를 담기 위해 사용 
+         var arr3 = ['민수', '철수', '영희'];
+         var arr4 = ['민수', '철수', '영희', 4, 5]; // 나중에 상품리스트를 꾸미기 위해 쓰일 수 있음.
+
+        /* console.log(arr);
+           console.log(arr2);
+           console.log(arr3);
+           console.log(arr4);*/
+         
+        var num = arr3.indexOf('민수');
+        var length = arr3.length;
+        /*console.log(num) 순서를 구하기위함
+        console.log(length) 길이를 구하기 위함 */
+
+        arr3.push('조던'); // 추가 속성
+        arr3.splice(num, 1); // 해당 번호의 것을 제거 함 번호를 변경해주면 민수부터 해당갯수만큼의 데이터를 제거함 
+
+        console.log(arr3);
+    </script>
+</body>
+</html>

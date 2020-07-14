@@ -1,0 +1,35 @@
+<html>
+<body>
+    <script>
+        var team = [
+        {
+            id: 11,
+            name: 'Jordan',
+            position: 'Guard',
+            height: 198,
+            weight: 98
+        },
+        {
+            id: 23,
+            name: 'Lebron',
+            position: 'Foward',
+            height: 208,
+            weight: 108
+        },
+        {
+            id: 30,
+            name: 'Curry',
+            position: 'Guard',
+            height: 191,
+            weight: 80
+        }
+        ]; //json 형태의 배열 
+
+        for (var i in team) { //team의 length 만큼 반복하게 된다.
+            //console.log(i);
+            //console.log(team['name']);
+            console.log(team[2]['height']);
+        }
+    </script>
+</body>
+</html>

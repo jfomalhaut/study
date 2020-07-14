@@ -2,13 +2,13 @@
 <body>
 	<script>
 		var sMath = prompt('수학 점수를 입력하세요') * 1;
-        if (100 < sMath && 0 > sMath) {
+        if (100 > sMath && 0 < sMath) {
             error();
         } else {
             var sKorean = prompt('국어 점수를 입력하세요') * 1;
-            if (100 < sKorean && 0 > sKorean) {
+            if (100 > sKorean && 0 < sKorean) {
                 var sEnglish = prompt('영어 점수를 입력하세요') * 1;
-                if (100 < sEnglish && 0 > sEnglish) {
+                if (100 > sEnglish && 0 < sEnglish) {
                     var total = sMath + sKorean + sEnglish;
                     var avg = Math.round(total / 3); // 소수점 반올림
                     var grade = "";

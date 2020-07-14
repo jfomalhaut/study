@@ -1,0 +1,44 @@
+<html>
+<body>
+    <script>
+        //키와 값 key and value 어떠한 데이터에서 키와 값을 줄수 있음. 키는 고정 value 값이 변한 
+        var player = {
+            id: 11,
+            name: 'Jordan',
+            position: 'Guard',
+            height: 198,
+            weight: 98
+        };
+
+        var player2 = {
+            id: 23,
+            name: 'Lebron',
+            position: 'Foward',
+            height: 208,
+            weight: 108
+        };
+
+        var team = [
+            {
+                id: 11,
+                name: 'Jordan',
+                position: 'Guard',
+                height: 198,
+                weight: 98
+            },
+            
+            {
+                id: 23,
+                name: 'Lebron',
+                position: 'Foward',
+                height: 208,
+                weight: 108
+            }
+        ];
+
+       // console.log(player2.name);
+        //console.log(player2['name']);  // 2가지 방법으로 쓸수 있음 for문과 쓸때이용 
+        console.log(team)[0];
+    </script>
+</body>
+</html>
