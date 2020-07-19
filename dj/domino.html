@@ -1,0 +1,192 @@
+<html>
+<head>
+    <title>domino</title>
+    <style>
+        *{margin: 0; padding: 0; list-style: none;}
+
+        header{
+            width: 100%;
+            height: 100px;
+        }
+
+        .inner{
+            width: 1100px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .innerTop{
+            width: 100%;
+            display: flex;
+        }
+
+        .innerTop h1{
+            flex-grow: 1;
+            margin-right: auto;
+        }
+
+        .innerTop .search{
+            flex-grow: 1;
+        }
+
+        .search input{
+            width: 250px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        .innerTop .utility ul {
+            display: flex;
+        }
+
+        .innerTop .utility ul li {
+            flex-grow: 1;
+            margin-left: auto;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .innerTop .utility ul li:nth-child(3) {
+            border: 2px solid lightgray;
+            border-radius: 20px;
+            letter-spacing: -2px;
+        }
+
+        .innerBottom {
+            width: 100%;
+
+        }
+
+        .innerBottom ul {
+            display: flex;
+            align-items: center;
+        }
+
+        .innerBottom ul li {
+            margin-right: auto;
+            cursor: pointer;
+            margin-top: auto;
+
+        }
+
+        .innerBottom ul li:nth-child(6) {
+            margin-left: auto;
+            cursor: pointer;
+        }
+
+        .img img{
+            width: 100%;
+        }
+
+        .order{
+            width: 100%;
+        }
+
+        .orderBox{
+            width: 1100px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="innerTop">
+                <h1>Domino's</h1>
+                <div class="search">
+                    <input type="text" placeholder="주변매장의 프로모션을 확인하세요."> 
+                </div>
+                <div class="utility">
+                    <ul>
+                        <li>로그인</li>
+                        <li>회원가입</li>
+                        <li>KOR</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="innerBottom">
+                <ul>
+                    <li>메뉴</li>
+                    <li>e-쿠폰</li>
+                    <li>상품권 선물</li>
+                    <li>이벤트 제휴</li>
+                    <li>매장검색</li>
+                    <li>더보기</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="img">
+            <img src="./img/domino/1.jpg" alt="">
+        </div>
+        
+        <div class="order">
+            <div class="orderBox">
+                <div class="orderTop">
+                    <div class="delivery"></div>
+                    <div class="togo"></div>
+                </div>
+                <div class="orderBottom">
+                    <div class="chatOrder"></div>
+                    <div class="quickOrder"></div>
+                    <div class="pickupOrder"></div>
+                </div>
+            </div>   
+        </div>
+
+        <div class="benefit">
+            <div class="innerBenefit">
+                <div class="login"></div>
+                <div class="innerImg"></div>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="serviceInner">
+                <div class="spot">
+                    <div class="name">도미노스팟</div>
+                    <div class="explain">밖에서 피자 먹고 싶을 때 주문!</div>
+                </div>
+                <div class="pickUp">
+                    <div class="name">도미노 드라이빙 픽업 서비스</div>
+                    <div class="explain">미리 주문하고 차에서 바로 받자!</div>
+                </div>
+            </div> 
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerTop">
+            <h2></h2>
+            <div class="telNum">1577-3082</div>
+            <div class="footUtility">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="footSearch"></div>
+            <div class="download"></div>
+            <div class="footerInfo">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div class="awardsArea"></div>
+        </div> 
+    </footer>
+    
+</body>
+</html>
