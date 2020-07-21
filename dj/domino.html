@@ -4,6 +4,9 @@
     <style>
         *{margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
 
+        .container {
+            height: 100vh;
+        }
         header {
             width: 100%;
             height: 100px;
@@ -309,162 +312,163 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="inner">
-            <div class="innerTop">
-                <h1>Domino's</h1>
-                <div class="search">
-                    <input type="text" placeholder="주변매장의 프로모션을 확인하세요."> 
+    <div class="container">
+        <header>
+            <div class="inner">
+                <div class="innerTop">
+                    <h1>Domino's</h1>
+                    <div class="search">
+                        <input type="text" placeholder="주변매장의 프로모션을 확인하세요."> 
+                    </div>
+                    <div class="utility">
+                        <ul>
+                            <li>로그인</li>
+                            <li>회원가입</li>
+                            <li>KOR</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="utility">
+                <div class="innerBottom">
                     <ul>
-                        <li>로그인</li>
-                        <li>회원가입</li>
-                        <li>KOR</li>
+                        <li>메뉴</li>
+                        <li>e-쿠폰</li>
+                        <li>상품권 선물</li>
+                        <li>이벤트 제휴</li>
+                        <li>매장검색</li>
                     </ul>
+                    <div class="seeMore">더보기</div>
                 </div>
             </div>
-            <div class="innerBottom">
-                <ul>
-                    <li>메뉴</li>
-                    <li>e-쿠폰</li>
-                    <li>상품권 선물</li>
-                    <li>이벤트 제휴</li>
-                    <li>매장검색</li>
-                </ul>
-                <div class="seeMore">더보기</div>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <div class="img">
-            <img src="./img/domino/1.jpg" alt="">
-        </div>
-        
-        <div class="order">
-            <div class="orderBox">
-                <div class="orderTop">
-                    <div class="delivery">
-                        <span class="text">배달주문</span>
-                        <span class="arrow"></span>
-                        <p>등급별 최대 30%</p>
-                    </div>
-                    <div class="wrap">
-                        <span class="text">포장주문</span>
-                        <span class="arrow"></span>
-                        <p>등급별 최대 40%</p>
-                    </div>
-                </div>
-                <div class="orderBottom">
-                    <div class="chatOrder">
-                        <span class="orders">도미챗 주문</span>
-                        <span class="arrow"></span>
-                        <p>빠르고 간편한 채팅 주문 서비스</p>
-                    </div>
-                    <div class="quickOrder">
-                        <span class="orders">퀵오더</span>
-                        <span class="arrow"></span>
-                        <p>자주 이용하는 메뉴를 <br>더 빠르게 주문해보세요!</p>
-                    </div>
-                    <div class="pickupOrder">
-                        <span class="orders">드라이빙 픽업주문</span>
-                        <span class="arrow"></span>
-                        <p>고객님의 차로 직접 <br>피자를 가져다 드립니다~</p>
-                    </div>
-                </div>
-            </div>   
-        </div>
-
-        <div class="benefit">
-            <div class="innerBenefit">
-                <div class="login">
-                    도미노피자의<br><strong>특별한 매니아 혜택</strong><br>누려보세요!
-                    <div class="innerlogin">로그인</div>
-                </div>
-                <div class="imgs">
-                    <img src="./img/domino/main_card1.png">
-                    <img src="./img/domino/main_card2.gif" alt="">
-                    <img src="./img/domino/main_card3.png" alt="">
-                    <img src="./img/domino/main_card4-1.gif" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div class="service">
-            <div class="serviceInner">
-                <div class="spot">
-                    <img src="./img/domino/11.jpg">   
-                </div>
-                <div class="pickUp">
-                    <img src="./img/domino/22.jpg" alt="">
-                </div>
-            </div> 
-        </div>
-    </main>
-
-    <footer>
-        <div class="footerTop">
-            <div class="footOrder">
-                <h2>Domino's</h2>
-                <span class="telNum">1577-3082</span>
-                <span class="footSearch">
-                    <input type="text" placeholder="KOR">
-                </span>
+        </header>
+    
+        <main>
+            <div class="img">
+                <img src="./img/domino/1.jpg" alt="">
             </div>
             
-            <div class="footContact">
-                <div class="footUtility">
+            <div class="order">
+                <div class="orderBox">
+                    <div class="orderTop">
+                        <div class="delivery">
+                            <span class="text">배달주문</span>
+                            <span class="arrow"></span>
+                            <p>등급별 최대 30%</p>
+                        </div>
+                        <div class="wrap">
+                            <span class="text">포장주문</span>
+                            <span class="arrow"></span>
+                            <p>등급별 최대 40%</p>
+                        </div>
+                    </div>
+                    <div class="orderBottom">
+                        <div class="chatOrder">
+                            <span class="orders">도미챗 주문</span>
+                            <span class="arrow"></span>
+                            <p>빠르고 간편한 채팅 주문 서비스</p>
+                        </div>
+                        <div class="quickOrder">
+                            <span class="orders">퀵오더</span>
+                            <span class="arrow"></span>
+                            <p>자주 이용하는 메뉴를 <br>더 빠르게 주문해보세요!</p>
+                        </div>
+                        <div class="pickupOrder">
+                            <span class="orders">드라이빙 픽업주문</span>
+                            <span class="arrow"></span>
+                            <p>고객님의 차로 직접 <br>피자를 가져다 드립니다~</p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+    
+            <div class="benefit">
+                <div class="innerBenefit">
+                    <div class="login">
+                        도미노피자의<br><strong>특별한 매니아 혜택</strong><br>누려보세요!
+                        <div class="innerlogin">로그인</div>
+                    </div>
+                    <div class="imgs">
+                        <img src="./img/domino/main_card1.png">
+                        <img src="./img/domino/main_card2.gif" alt="">
+                        <img src="./img/domino/main_card3.png" alt="">
+                        <img src="./img/domino/main_card4-1.gif" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="service">
+                <div class="serviceInner">
+                    <div class="spot">
+                        <img src="./img/domino/11.jpg">   
+                    </div>
+                    <div class="pickUp">
+                        <img src="./img/domino/22.jpg" alt="">
+                    </div>
+                </div> 
+            </div>
+        </main>
+    
+        <footer>
+            <div class="footerTop">
+                <div class="footOrder">
+                    <h2>Domino's</h2>
+                    <span class="telNum">1577-3082</span>
+                    <span class="footSearch">
+                        <input type="text" placeholder="KOR">
+                    </span>
+                </div>
+                
+                <div class="footContact">
+                    <div class="footUtility">
+                        <ul>
+                            <li>이용약관</li>
+                            <li>개인정보처리방침</li>
+                            <li>고객센터</li>
+                            <li>인재채용</li>
+                            <li>가맹점모집</li>
+                            <li>단체주문</li>
+                        </ul>
+                    </div>
+                    <div class="download">DOWNLOAD APP</div>
+                </div>
+                <div class="footerInfo">
+                    <p>06229 서울특별시 강남구 언주로 315 청오디피케이<small>(주)</small> ｜ 대표이사: 오광현</p>
+                    <p>사업자 등록번호: 220-81-03371 ｜통신판매업신고: 강남 5064호 ｜개인정보 보호책임자: 이명윤</p>
+                    <p>문의:webmaster@dominos.co.kr</p>
+                    <p>Copyright&copy;Domino's Pizza. All rights reserved.</p>
+                    <p>청오디피케이<small>(주)</small>의 사전 서면동의 없이 도미노 피자 사이트(PC,모바일,앱)의 일체의 정보,콘텐츠 및 UI 등을 상업적 목적으로 전재,전송,스크래핑 등 무단 사용할 수 없습니다.</p>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <div class="awardsArea">
                     <ul>
-                        <li>이용약관</li>
-                        <li>개인정보처리방침</li>
-                        <li>고객센터</li>
-                        <li>인재채용</li>
-                        <li>가맹점모집</li>
-                        <li>단체주문</li>
+                        <li>
+                            <img src="./img/domino/list_awards.png" alt="">
+                            <p>식품안전<br>경영시스템 인증</p>
+                        </li>
+                        <li>
+                            <img src="./img/domino/list_awards2.png" alt="">
+                            <p>지식경제부<br>우수디자인 선정</p>
+                        </li>
+                        <li>
+                            <img src="./img/domino/list_awards3.png" alt="">
+                            <p>고객이 가장 추천하는 기업<br>피자전문점 부문 7년 연속 1위</p>
+                        </li>
+                        <li>
+                            <img src="./img/domino/list_awards4.png" alt="">
+                            <p>2019년 한국산업 고객만족도<br>피자전문점 부문 5년 연속 1위 수상</p>
+                        </li>
+                        <li>
+                            <img src="./img/domino/list_awards5.png" alt="">
+                            <p>2019년 프리미엄브랜드지수<br>피자전문 부문 4년 연속 1위 수상</p>
+                        </li>
+                        <li>
+                            <img src="./img/domino/list_awards6.png" alt="">
+                            <p>대학생 1000명이 선택한<br>2019 올해의 핫 브랜드 캠퍼스 잡앤조이선정</p>
+                        </li>
                     </ul>
                 </div>
-                <div class="download">DOWNLOAD APP</div>
-            </div>
-            <div class="footerInfo">
-                <p>06229 서울특별시 강남구 언주로 315 청오디피케이<small>(주)</small> ｜ 대표이사: 오광현</p>
-                <p>사업자 등록번호: 220-81-03371 ｜통신판매업신고: 강남 5064호 ｜개인정보 보호책임자: 이명윤</p>
-                <p>문의:webmaster@dominos.co.kr</p>
-                <p>Copyright&copy;Domino's Pizza. All rights reserved.</p>
-                <p>청오디피케이<small>(주)</small>의 사전 서면동의 없이 도미노 피자 사이트(PC,모바일,앱)의 일체의 정보,콘텐츠 및 UI 등을 상업적 목적으로 전재,전송,스크래핑 등 무단 사용할 수 없습니다.</p>
-            </div>
-        </div>
-        <div class="footerBottom">
-            <div class="awardsArea">
-                <ul>
-                    <li>
-                        <img src="./img/domino/list_awards.png" alt="">
-                        <p>식품안전<br>경영시스템 인증</p>
-                    </li>
-                    <li>
-                        <img src="./img/domino/list_awards2.png" alt="">
-                        <p>지식경제부<br>우수디자인 선정</p>
-                    </li>
-                    <li>
-                        <img src="./img/domino/list_awards3.png" alt="">
-                        <p>고객이 가장 추천하는 기업<br>피자전문점 부문 7년 연속 1위</p>
-                    </li>
-                    <li>
-                        <img src="./img/domino/list_awards4.png" alt="">
-                        <p>2019년 한국산업 고객만족도<br>피자전문점 부문 5년 연속 1위 수상</p>
-                    </li>
-                    <li>
-                        <img src="./img/domino/list_awards5.png" alt="">
-                        <p>2019년 프리미엄브랜드지수<br>피자전문 부문 4년 연속 1위 수상</p>
-                    </li>
-                    <li>
-                        <img src="./img/domino/list_awards6.png" alt="">
-                        <p>대학생 1000명이 선택한<br>2019 올해의 핫 브랜드 캠퍼스 잡앤조이선정</p>
-                    </li>
-                </ul>
-            </div>
-        </div> 
-    </footer>
-    
+            </div> 
+        </footer>
+    </div>
 </body>
 </html>
