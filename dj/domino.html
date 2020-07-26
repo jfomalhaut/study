@@ -37,7 +37,10 @@
             border-top: none;
             border-left: none;
             border-right: none;
+            padding: 5px 20px;
         }
+
+
 
         .innerTop .utility ul {
             display: flex;
@@ -49,11 +52,35 @@
             cursor: pointer;
             margin-left: 10px;
         }
+        .innerTop .kor {
+            width: 60px;
+            text-align: left;
+            height: 27px;
+            margin-left: 10px;
+            font-size: 12px;
+            border: 1px solid lightgray;
+            border-radius: 12px;
+            padding: 0 13px;
+            line-height: 27px;
+            position: relative;
+        }
 
-        .innerTop .utility ul li:nth-child(3) {
-            border: 2px solid lightgray;
-            border-radius: 20px;
-            letter-spacing: -2px;
+        .kor:after {
+            content: "";
+            position: absolute;
+            right: 5px;
+            top: 10px;
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-style: solid;
+            border: transparent lightgray lightgray transparent;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+            transform-origin: 66% 66%;
+            margin-left: 7px;
+            margin-right: 4px;
+            vertical-align: 4px;
         }
 
         .innerBottom {
@@ -77,6 +104,21 @@
             margin-left: auto;
             cursor: pointer;
             padding: 10px 0;
+            display: inline-block;
+        }
+
+        .seeMore:after {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-style: solid;
+            border: transparent black black transparent;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+            margin-left: 7px;
+            margin-right: 4px;
+            vertical-align: 4px;
         }
 
         .img img {
@@ -102,18 +144,60 @@
 
         .delivery {
             flex-grow: 1;
-            color: tomato;
+            color:  #ff143c;
             font-size: 50px;
             cursor: pointer;
         }
+        
+        .delivery .arrow {
+            position: relative;
+            background-color: #ff143c;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            border-radius: 50%;
+            display: inline-block;
+        }
 
+        .delivery .arrow:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 13px;
+            height: 13px;
+            border-bottom: 2px solid white;
+            border-right: 2px solid white;
+            transform: translate(-60%, -50%) rotate(-45deg);
+        }
         .wrap {
             flex-grow: 1;
             color: #1382ff;
             font-size: 50px;
             cursor: pointer;
         }
+        
+        .wrap .arrow {
+            position: relative;
+            background-color: #1382ff;            
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            border-radius: 50%;
+            display: inline-block;
+        }
 
+        .wrap .arrow:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 13px;
+            height: 13px;
+            border-bottom: 2px solid white;
+            border-right: 2px solid white;
+            transform: translate(-60%, -50%) rotate(-45deg);
+        }
         .orderTop p {
             color: #888888;
             font-size: 16px;
@@ -128,7 +212,6 @@
 
         .orderBottom .orders {
             font-size: 30px;
-            font-weight: bold;
         }
 
         .orderBottom p {
@@ -140,13 +223,79 @@
             cursor: pointer;
         }
 
+        .chatOrder .arrow {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: 1px solid black;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .chatOrder .arrow:after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            width: 7px;
+            height: 7px;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            transform: translate(-60%, -50%) rotate(-45deg);
+            cursor: pointer;
+        }
+
         .quickOrder {
             flex-grow: 1;
             cursor: pointer;
         }
 
+        .quickOrder .arrow {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: 1px solid black;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .quickOrder .arrow:after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            width: 7px;
+            height: 7px;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            transform: translate(-60%, -50%) rotate(-45deg);
+            cursor: pointer;
+        }
+
         .pickupOrder {
             flex-grow: 1;
+            cursor: pointer;
+        }
+
+        .pickupOrder .arrow {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: 1px solid black;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .pickupOrder .arrow:after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            width: 7px;
+            height: 7px;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            transform: translate(-60%, -50%) rotate(-45deg);
             cursor: pointer;
         }
 
@@ -324,9 +473,9 @@
                         <ul>
                             <li>로그인</li>
                             <li>회원가입</li>
-                            <li>KOR</li>
                         </ul>
                     </div>
+                    <div class="kor">KOR</div>
                 </div>
                 <div class="innerBottom">
                     <ul>
