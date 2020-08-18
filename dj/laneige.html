@@ -1,0 +1,114 @@
+<html>
+<head>
+    <style>
+        *{margin: 0; padding: 0; list-style: none;}
+
+        header {
+            width: 100%;
+            background-color: lightgray;
+            height: 100px;
+        }
+
+        .headBox {
+            width: 1150px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .logo img {
+            width: 200px;
+            height: 100%;
+        }
+
+        .inner {
+            flex-grow: 1;
+            height: 100%;
+            background-color: coral;
+        }
+
+        ul {display: flex;}
+        .main {
+            width: 100%;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+        }
+
+        li:hover div:first-child {background-color: lightgreen;}
+        span {
+            color: yellow;
+            font-size: 12px;   
+        }
+
+        .background {
+            width: 100%;
+            background-color: black;
+            height: 0;
+            transition: .2s;
+        }
+
+        .menus {display:  none;}
+
+        .inner:hover ~ .background, .menus:hover{
+			height: 150px;
+		}
+
+        li:hover .menus {
+            display: block;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headBox">
+            <div class="logo">
+                <img src="./img/laneige/laneige-logo.svg">
+            </div>
+            <div class="inner">
+                <div class="nav">
+                    <ul>
+                        <li class="main">
+                            <div class="brand">브랜드</div>
+                            <div class="menus">
+                                <span>브랜드스토리</span>
+                                <span>리필 미 사회공헌 캠페인</span>
+                                <span>루미너스 라이브</span>
+                                <span>플래그십 스토어</span>
+                            </div>
+                        </li>
+                        <li class="main">
+                            <div class="best">베스트&신상품</div>
+                            <div class="menus">
+                                <span>신상품</span>
+                                <span>어워드 위너</span>
+                                <span>베스트 셀러</span>
+                            </div>
+                        </li>
+                        <li class="main">
+                            <div class="best">스킨케어</div>
+                            <div class="menus">
+                                <span>신상품</span>
+                                <span>어워드 위너</span>
+                                <span>베스트 셀러</span>
+                            </div>
+                        </li>
+                        <li class="main">
+                            <div class="best">메이크업</div>
+                            <div class="menus">
+                                <span>신상품</span>
+                                <span>어워드 위너</span>
+                                <span>베스트 셀러</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="background"></div>
+            </div>
+            <div class="utility"></div>
+        </div>
+    </header>
+</body>
+</html>
