@@ -1,0 +1,65 @@
+<html>
+<head>
+<style>
+    .container {
+        text-align: center;
+        color: white;
+        height: 100vh;
+    }
+
+    header {
+        background-color: lightgrey;
+        width: 100%;
+    }
+
+    footer {
+        background-color: lightgrey;
+        width: 100%;
+    }
+
+    nav {
+        background-color: grey;
+        width: 100%;
+    }
+
+    section {
+        display: flex;
+        background-color: skyblue;
+        height: 580px;
+    }
+
+    aside { 
+        flex-grow:0.3;
+        background-color: blue;
+    }
+
+    .articles {
+        flex-grow: 1;
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    article {
+        background-color: slateblue;
+        width: calc((100% - 10px * 2)/3);
+    }
+</style>
+    <body>
+        <div class="container">
+            <header>Header</header>
+            <nav>Nav</nav>
+            <section>
+                <aside>aside</aside>
+                <div class="articles">
+                    <article>article</article>
+                    <article>article</article>
+                    <article>article</article>
+                </div>
+                <aside>aside</aside>
+            </section>
+            <footer>foooter</footer>
+        </div>    
+    </body>
+</head>
+</html>
